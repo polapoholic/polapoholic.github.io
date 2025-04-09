@@ -9,6 +9,7 @@
 
 <script>
     function requestClose() {
+        console.log('call opener')
         // 부모 창으로 메시지 전송
         window.opener.postMessage("closeMe", "https://your-vue-app-domain.com");
     }
